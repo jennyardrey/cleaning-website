@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Navbar from "./Navbar";
-import Main from "./Main";
-import ContactForm from "./ContactForm";
+import Header from "././components/Header";
+import Main from "./components/Main";
+import ContactForm from "./components/ContactForm"
 
 function App() {
 	return (
 		<div className="App">
-			<Navbar />
+			<Header />
 			<Main />
 			<ContactForm />
 		</div>
