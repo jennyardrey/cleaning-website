@@ -1,7 +1,7 @@
 import React from "react"
-import "./../styles/ContactForm.css"
+import "./../styles/ContactForm.scss"
+import { Link } from "react-scroll";
 var Scroll = require('react-scroll');
-
 
 function ContactForm() {
 	return (
@@ -16,6 +16,18 @@ function ContactForm() {
 				<label for="info">Information</label>
 				<textarea name="info"></textarea>
 			</form>
+			<div className="nav-btns">
+				<Link
+					activeClass="active"
+					to="main"
+					spy={true}
+					smooth={true}
+					offset={0}
+					duration={1000}
+				>
+					<button className="price-btn">Back to Main</button>
+				</Link>
+			</div>
 		</div >
 	)
 }

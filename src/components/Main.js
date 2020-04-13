@@ -1,7 +1,7 @@
 import React, { Component } from "react"
-import "../styles/Main.css"
-import arrow from "../images/arrow.png"
-import { Link } from "react-scroll";
+import "../styles/Main.scss"
+// import arrow from "../images/arrow.png"
+import Header from "./Header";
 import Information from "../components/Information"
 import Prices from "../components/Prices"
 
@@ -26,19 +26,13 @@ class Main extends Component {
 	}
 	render() {
 		return (
-			<div className="main">
-				{this.state.prices === false ? <Information showPrice={this.showPrice} /> : <Prices showInfo={this.showInfo} />}
 
-				<Link
-					activeClass="active"
-					to="contact"
-					spy={true}
-					smooth={true}
-					offset={0}
-					duration={1000}
-				>
-					<img id="scroll-down" src={arrow} alt="scroll arrow" />
-				</Link>
+
+			<div className="main">
+				<div className="title"><h1>Here is a title</h1></div>
+				<div className="main-content">
+					{this.state.prices === false ? <Information showPrice={this.showPrice} /> : <Prices showInfo={this.showInfo} />}
+				</div>
 			</div>
 		)
 	}

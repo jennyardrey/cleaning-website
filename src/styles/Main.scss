@@ -1,31 +1,15 @@
 .main {
-	
 	max-width: 100vw;
-	background-color: #B5EAFF;
 	height: 100vh;
 	margin: 10;
-	position: relative
+	position: relative;
 }
-
-#scroll-down {
-	height: 50px;
-	position: fixed;
-	bottom: 0;
-	right: 45vw;
+.title {
+	padding: 30px;
+background-color: white;
 }
-
-.image {
-	width: 40vw;
-	margin: 20px;
-}
-
-h1 h2 h3 p {
-	margin: 0;
-}
-
-.information {
-	display: felx;
-	flex-direction: column;
+.main-content {
+	margin: 75px;
 }
 
 /*mobile*/
@@ -36,9 +20,10 @@ h1 h2 h3 p {
 	.main-content {
 		display: flex;
 		flex-direction: column;
-					align-items: center;
-
+		align-items: center;
 	}
+
+
 }
 /*tablet*/
 @media only screen and (min-width: 768px) {
@@ -50,6 +35,7 @@ h1 h2 h3 p {
 		flex-direction: column;
 			align-items: center;
 	}
+
 }
 /*desktop*/
 @media only screen and (min-width: 992px)
@@ -60,4 +46,10 @@ h1 h2 h3 p {
 		align-content: center;
 		justify-content: center;
 	}
+	.main-info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 }
